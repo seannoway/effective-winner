@@ -12,6 +12,7 @@ app.use(express.static("public"));
 app.use(html_routes)
 app.use(api_routes)
 
+//this code sets up the Express application to start a server on the specified port and displays a message in the console indicating the URL where the server can be accessed.
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
